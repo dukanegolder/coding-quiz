@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(208, 199, 185);
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+.rules {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+li {
+    font-size: 20px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(71, 109, 203);
+    scale: 2;
+}
