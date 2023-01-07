@@ -21,9 +21,20 @@ var questions = [
     },
 ]
 
-var homepage = document.querySelector(".rules")
-var startbtn = document.getElementById('#startbtn')
 
-startbtn.addEventListener("click", function () {
 
-})
+var homepage = document.querySelector(".rules");
+var startbtn = document.getElementById('#startbtn');
+
+
+function startQuiz() {
+    if (homepage.style.display === "none") {
+        questions[0].style.display = "block";
+    } else {
+        questions[0].style.display = "none";
+    }
+}
+
+startQuiz()
+
+startBtn.onclick = startQuiz()
