@@ -20,9 +20,16 @@ var questions = [
         correct: 'true'
     },
 ]
+let countdown = 60;
 
-// let output = document.getElementById("output");
-// output.innerHTML = questions[0].question;
+let timer = setInterval(function () {
+    countdown--;
+    document.getElementById("timer").innerHTML = countdown;
+    if (countdown === 0) {
+        clearInterval(timer);
+    }
+}, 1000);
+
 
 var homepage = document.querySelector(".rules");
 var startbtn = document.getElementById("startQuiz");
@@ -31,5 +38,9 @@ startbtn.onclick = function () {
     document.getElementById("rules").style.display = "none"
     document.getElementById("questions").style.display = "block";
 }
+
+
+
+
 
 

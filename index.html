@@ -40,9 +40,48 @@
 
     </section>
 
+    <!-- note - initially,
+    all our other questions are going to have
+    a CSS variable of "display: none"
 
+    if we select wrongAns,
+    countdown = countdown - 5; or countdown -= 5;
+
+    if we select correctAns,
+    then the current question gets display: none;
+    and the next question gets display: block;
+
+    how do we track what question we're on?
+    we can use the questions array
+    question 1 = questions[0]
+    Since we know what question we're on using the array,
+    when the question is answered correctly,
+    we can set questions[1] to display: block;
+
+    the last question is going to have a different function if
+    the right answer is submitted
+
+    we want a new function that disappears this last question,
+    and makes a form appear
+    where the user can enter their initials and their score
+
+    the score can be tracked using a separate variable
+    this can be a global variable so it can be accessed by all the functions
+
+    this score can then appear in the final screen before the user enters
+    their initials and submits
+
+    if you wanted to make it so a high score screen is displayed
+    ex:
+    1. M.O, score - 3
+    1. M.j, score - 2
+
+    We can store our users initials and scores into an array of arrays
+    so we can sort this array by score and then display the top 5 at the end -->
 
     <section id="questions">
+
+        <div id="timer">60</div>
 
         <section class="q1">
             <h2>Question 1</h2>
@@ -54,19 +93,19 @@
             <div class="answers1">
 
                 <div id="1.1">
-                    <button>True</button>
+                    <button onclick="correctAns()">True</button>
                 </div>
 
                 <div id="1.2">
-                    <button>String</button>
+                    <button onclick="wrongAns()">String</button>
                 </div>
 
                 <div id="1.3">
-                    <button>Number</button>
+                    <button onclick="wrongAns()">Number</button>
                 </div>
 
                 <div id="1.4">
-                    <button>Undefined</button>
+                    <button onclick="wrongAns()">Undefined</button>
                 </div>
             </div>
 
@@ -82,19 +121,19 @@
             <div class="answers2">
 
                 <div id="2.1">
-                    <button>#</button>
+                    <button onclick="wrongAns()">#</button>
                 </div>
 
                 <div id="2.2">
-                    <button>$</button>
+                    <button onclick="wrongAns()">$</button>
                 </div>
 
                 <div id="2.3">
-                    <button>@</button>
+                    <button onclick="wrongAns()">@</button>
                 </div>
 
                 <div id="2.4">
-                    <button>.</button>
+                    <button onclick="correctAns()">.</button>
                 </div>
             </div>
 
@@ -110,19 +149,19 @@
             <div class="answers3">
 
                 <div id="3.1">
-                    <button>Juicestand</button>
+                    <button onclick="wrongAns()">Juicestand</button>
                 </div>
 
                 <div id="3.2">
-                    <button>Javascript</button>
+                    <button onclick="correctAns()">Javascript</button>
                 </div>
 
                 <div id="3.3">
-                    <button>Javastring</button>
+                    <button onclick="wrongAns()">Javastring</button>
                 </div>
 
                 <div id="3.4">
-                    <button>Justscript</button>
+                    <button onclick="wrongAns()">Justscript</button>
                 </div>
             </div>
         </section>
@@ -137,11 +176,11 @@
             <div class="answers4">
 
                 <div id="4.1">
-                    <button>False</button>
+                    <button onclick="correctAns()">False</button>
                 </div>
 
                 <div id="4.2">
-                    <button>True</button>
+                    <button onclick="wrongAns()">True</button>
                 </div>
             </div>
 
