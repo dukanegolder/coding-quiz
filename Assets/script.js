@@ -21,20 +21,15 @@ var questions = [
     },
 ]
 
-
+// let output = document.getElementById("output");
+// output.innerHTML = questions[0].question;
 
 var homepage = document.querySelector(".rules");
-var startbtn = document.getElementById('#startbtn');
+var startbtn = document.getElementById("startQuiz");
 
-
-function startQuiz() {
-    if (homepage.style.display === "none") {
-        questions[0].style.display = "block";
-    } else {
-        questions[0].style.display = "none";
-    }
+startbtn.onclick = function () {
+    document.getElementById("rules").style.display = "none"
+    document.getElementById("questions").style.display = "block";
 }
 
-startQuiz()
 
-startBtn.onclick = startQuiz()

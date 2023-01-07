@@ -26,3 +26,7 @@ button {
     background-color: rgb(71, 109, 203);
     scale: 2;
 }
+
+#questions {
+    display: none;
+}
