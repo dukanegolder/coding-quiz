@@ -1,3 +1,5 @@
+var currentQuestion = 0
+
 var questions = [
     {
         question: 'Which one of these is a boolean?',
@@ -6,20 +8,43 @@ var questions = [
     },
     {
         question: 'What symbole is used to create a class element in CSS?',
-        choices: ['@', '*', '#', '.'],
+
+        choices: ['@',
+
+            '*',
+
+            '#',
+
+            '.'],
+
         correct: '.'
     },
     {
         question: 'What does JS stand for?',
-        choices: ['Juicestand', 'Javascript', 'Javastring', 'Justscript'],
+
+        choices: ['Juicestand',
+
+            'Javascript',
+
+            'Javastring',
+
+            'Justscript'],
+
         correct: 'Javascript'
     },
     {
         question: 'Javascript is the same as Java?',
-        choices: ['False', 'True'],
+
+        choices: ['False',
+
+            'True'],
+
         correct: 'true'
     },
 ]
+
+
+
 let countdown = 60;
 
 let timer = setInterval(function () {
@@ -39,8 +64,10 @@ startbtn.onclick = function () {
     document.getElementById("questions").style.display = "block";
 }
 
+var question1 = document.getElementById("Q1")
 
+question1.innerHTML = questions[0]
 
-
+console.log(question1)
 
 
