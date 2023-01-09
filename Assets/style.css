@@ -42,3 +42,28 @@ button {
 #q4 {
     display: none;
 }
+
+.title {
+    margin-bottom: 20px;
+}
+
+.question_section {
+    display: flex;
+    flex-direction: column;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    margin-left: 50px;
+}
+
+.btn {
+    margin-top: 30px;
+}
+
+#initals_input {
+    display: flex;
+
+}
