@@ -114,16 +114,21 @@ function renderHighScoreSection() {
         const highScoreResults = document.createElement('div');
         var results = JSON.parse(localStorage.getItem('highscores'))
         console.log(results[0])
+
         for (let i = 0; i < results.length; i++) {
             var initialsHeader = document.createElement('h3');
             initialsHeader.innerHTML = results[i].initials
             highScoreResults.appendChild(initialsHeader);
 
+            var scoreNumber = document.createElement('h3');
+            scoreNumber.innerHTML = results[i].score;
+            highScoreResults.appendChild(scoreNumber);
+
         }
 
-        const scoreResults = document.createElement('div');
-        scoreResults.innerHTML = localStorage.getItem('highscores');
-        highScoreResults.appendChild(scoreResults)
+        // const scoreResults = document.createElement('div');
+        // scoreResults.innerHTML = localStorage.getItem('highscores');
+        // highScoreResults.appendChild(scoreResults)
         highScoreSection.appendChild(highScoreResults);
     });
 
