@@ -1,5 +1,5 @@
 var currentQuestion = 0;
-var score = 0;
+var score = 10;
 var highScores;
 var playerInitialsAll = []
 
@@ -161,7 +161,7 @@ function renderChoices(q) {
                     questionTitle.innerHTML = questions[currentQuestion].question;
                     renderChoices(questions[currentQuestion]);
                     countdown -= 10;
-                    if (score > 0) {
+                    if (score > 10) {
                         score -= 10;
                     }
                 }
