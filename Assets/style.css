@@ -14,6 +14,7 @@ body {
 
 h3 {
     text-align: center;
+
 }
 
 li {
@@ -29,6 +30,10 @@ button {
 
 #questions {
     display: none;
+}
+
+#question_title {
+    font-size: 30px;
 }
 
 #q2 {
@@ -63,7 +68,14 @@ button {
     margin-top: 30px;
 }
 
-#initals_input {
-    display: flex;
+/* #initals_input {
+    position: fixed;
+    margin-left: 43%;
+} */
 
+#highscore {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 20%; */
+    align-items: center;
 }

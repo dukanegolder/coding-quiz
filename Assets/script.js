@@ -90,7 +90,7 @@ function renderHighScoreSection() {
     const submitBtn = document.createElement('button');
     submitBtn.innerHTML = 'Submit'
     submitBtn.style.marginTop = '20px';
-    submitBtn.style.marginLeft = '50px';
+    // submitBtn.style.marginLeft = '50px';
 
 
     submitBtn.addEventListener('click', (event) => {
