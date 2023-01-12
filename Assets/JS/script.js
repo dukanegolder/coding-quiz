@@ -3,6 +3,7 @@ var score = 10;
 var highScores;
 var playerInitialsAll = []
 
+
 var questions = [
     {
         question: 'Which one of these is a boolean?',
