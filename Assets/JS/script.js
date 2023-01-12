@@ -100,6 +100,8 @@ function renderHighScoreSection() {
         playerInitialsAll = JSON.parse(localStorage.getItem('highscores'))
 
 
+
+
         console.log(playerInitialsAll)
         let newScore = {
             score: score, initials: playerInitials
